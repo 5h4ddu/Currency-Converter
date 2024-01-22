@@ -7,42 +7,48 @@
     <title>Currency Converter</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Currency Converter</h1>
+    <div class="bg-container">
+      <div class="container">
+        <h1>Currency Converter</h1>
 
-      <div class="converter">
-        <label for="amount" class="thikhai">Amount:</label>
-        <input class="thikhai" type="number" id="amount" placeholder="Enter amount" />
+        <div class="converter">
+          <label for="amount" class="thikhai">Amount:</label>
+          <input
+            class="thikhai"
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+          />
 
-        <label for="from" class="thikhai">From Currency:</label>
-        <select id="from" class="thikhai">
-          <option value="USD">United States Dollar (USD)</option>
-          <option value="INR">Indian Rupees (INR)</option>
-          <option value="EUR">Euro (EUR)</option>
-          <option value="GBP">British Pound (GBP)</option>
-          <option value="MUR">Mauritian rupee (MUR)</option>
-          <option value="JPY">Japanese Yen (JPY)</option>
-          <option value="AUD">Australian Dollar (AUD)</option>
-          <option value="PKR">pakistani rupee (PKR)</option>
-        </select>
+          <label for="from" class="thikhai">From Currency:</label>
+          <select id="from" class="thikhai">
+            <option>Select</option>
+            <option value="USD">United States Dollar (USD)</option>
+            <option value="INR">Indian Rupees (INR)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="MUR">Mauritian rupee (MUR)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="PKR">pakistani rupee (PKR)</option>
+          </select>
 
-        <label for="to" class="thikhai">To Currency:</label>
-        <select id="to" class="thikhai">
-          <option value="USD">United States Dollar (USD)</option>
-          <option value="INR">Indian Rupees (INR)</option>
-          <option value="EUR">Euro (EUR)</option>
-          <option value="GBP">British Pound (GBP)</option>
-          <option value="MUR">Mauritian rupee (MUR)</option>
-          <option value="JPY">Japanese Yen (JPY)</option>
-          <option value="AUD">Australian Dollar (AUD)</option>
-          <option value="PKR">pakistani rupee (PKR)</option>
-          
-        </select>
-
-        <button onclick="convertCurrency()">Convert</button>
+          <label for="to" class="thikhai">To Currency:</label>
+          <select id="to" class="thikhai">
+            <option>Select</option>
+            <option value="USD">United States Dollar (USD)</option>
+            <option value="INR">Indian Rupees (INR)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="MUR">Mauritian rupee (MUR)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="PKR">pakistani rupee (PKR)</option>
+          </select>
+        </div>
+        <button onclick="convertCurrency()" class="btn-primary">Convert</button>
+        <div id="result" class="result"></div>
       </div>
-
-      <div id="result" class="result"></div>
     </div>
 
     <script src="script.js"></script>

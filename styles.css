@@ -1,66 +1,81 @@
-body {
-    font-family: "roboto";
-    margin: 0;
-    padding: 0;
-    background-color: #5dafcb;
-    justify-content: center;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.bg-container {
+  height: 100vh;
+  width: 100wh;
+  font-family: "roboto";
+  background-image: linear-gradient(black,white, #841e1e, white, black);
+  display: grid;
+  place-items: center;
 
+}
 .container {
-    max-width: 600px;
-    margin: 50px auto; /* Auto margin for center alignment */
-    background-color: #fdfafa;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    
-
+  max-width: 950px;
+  margin:0 auto; /* Auto margin for center alignment*/
+  background-color: #fdfafa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  display: grid;
+  place-items: center;
 }
-
-.thikhai{
-    font-weight: 600;
-    align-items: center;
-    text-align: center;
+#amount{
+    color: #841e1e;
+}
+.thikhai {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(132, 30, 30);
 }
 
 h1 {
-    color: rgb(132, 30, 30);
-    font-family: serif;
-    font-size: 36px;
+  color: rgb(132, 30, 30);
+  font-family: serif;
+  font-size: 36px;
 }
 
 .converter {
-    margin-top: 20px;
-  
+  max-width: 600px;
+  margin:0 auto; /* Auto margin for center alignment*/
+  background-color: #fdfafa;
+  padding: 20px;
+  overflow: hidden; 
+  margin-top: 20px;
 }
 
-
-label, input, select, button {
-    display: block;
-    margin-bottom: 10px;
+label,
+input,
+select,
+button {
+  display: block;
+  margin-bottom: 10px;
 }
 
 button {
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px;
+  background-color: #841e1e;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  font-size: 20px;
 }
 
 button:hover {
-    background-color: #2980b9;
+ color: #202020;
 }
 
 .result {
-    color: #202020;
-    margin-top: 20px;
-    font-weight: bold;
-    font-family: "roboto";
-    font-size: 30px;
-    margin-top: 20px;
+  color: #202020;
+  font-weight: bold;
+  font-family: "roboto";
+  font-size: 30px;
+  margin-bottom: 30px;
 }
